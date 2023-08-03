@@ -1,0 +1,93 @@
+*{
+    margin: 1px;
+    box-sizing:border-box;
+}
+
+body{
+
+    height: 95vh;
+    background: white;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    display: felx;
+    flex-direction: column;
+}
+
+header{
+    
+    display: inline-block;
+    
+}
+
+.main{
+    display: flex;
+    flex: 1;
+}
+
+.left{
+    background:#c6f8f8;
+    padding: 3em 0 3em 0;
+    flex: 1 1 50px; 
+}
+
+main{
+    
+    padding: 3em 0 3em 0;
+    flex: 5 5 150px; 
+} 
+
+.right{
+    background:#c6f8f8;
+    padding: 3em 0 3em 0;
+    flex: 1 1 50px; 
+}
+
+.left img {
+    width: 100px;
+    height: auto;
+    margin-left: 10px; 
+    margin-top: 20px;
+}
+
+.logo img {
+    width: 130px;
+    height:80px;
+}
+
+.right img {
+    width: 100px;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 30px;   
+}
+
+
+
+.footer{
+    background:#3c40c6;
+    padding: 1em 0 1em 0;
+}
+
+@media all and (max-width: 550px){
+
+    .main{
+        flex-direction: column;
+
+    }
+    main{
+        padding: 5em 0 5em 0;
+    }
+}
+    
+.logo button {
+    font-size: 15px; font-weight: bold; /* 버튼의 글자 크기 설정 */
+    width: 130px;   height: 50px;
+    margin: 3px; /* 버튼 사이의 간격 설정 */
+    margin-top: 50px;
+}
+
+
+
+
+

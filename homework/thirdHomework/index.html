@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        li{
+            list-style: none;
+        }
+    .blockTag{
+        background-color: yellowgreen;
+    }   
+    .blockTag > div{    /*.blockTag안에 있는 자식요소인 div들을 선택할 수 있다*/
+        background: tomato;
+        border:1px solid black;
+    }
+    .inlineTag span{
+        background: skyblue;
+        border:1px solid black;
+    }
+
+    </style>
+    <h1>제목</h1>
+    <h2>제목</h2>
+    <h6>제목</h6>
+
+    <ul>
+        <li>목록 1</li>         
+        <li>목록 2</li>  
+        <li>목록 3</li>  
+    </ul>
+
+<!-- 
+    <div class="blockTag">
+        <div>block 1</div>
+        <div>block 2</div>
+        <div>block 3</div>
+    </div>
+
+    <div class="inlineTag">
+        <span>inline 1</span>
+        <span>inline 2</span>
+        <span>inline 3</span>
+    </div> -->
+
+</body>
+</html>

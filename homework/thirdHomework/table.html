@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style> 
+        *{
+            border-collapse: collapse ; /*테이블 사이 선 떨어진 것을 붙일 수 있다*/
+            margin:0px;
+            padding: 0px;
+            text-decoration: none; /*링크 색깔등 기본적으로 들어가 있는 밑줄 제거 */
+            color: black;
+            list-style: none;  /*리스트 앞에 붙는 점들 없애줌*/
+
+        }
+
+        table{
+            border: 1px solid black; /*테이블의 제일 아래에만 선이 생김*/
+            border-collapse: collapse ; /*테이블 사이 선 떨어진 것을 붙일 수 있다*/
+        }
+
+        table > thead > tr > th {
+            border: 1px solid gray;
+        }
+
+        table > tbody > tr > td {      /*테이블의 데이터넣는 부분 설정*/
+            border: 1px solid gray;
+            background: pink;   
+        }
+        
+        
+        /*table th {      (table과 th에 띄어쓰기만 하나 넣어줘도 위와 동일한 결과)
+
+            border: 1px solid gray;
+        } */
+        
+        .blankPosition{   /*position의 위치속성 비교하기*/
+            width: 100%;
+            background: rgb(72, 69, 69);
+            height: 400px;
+        }
+
+        .relativePosition{
+            width: 100%;
+            background: rgb(245, 169, 224);
+            height: 300px;
+        }
+
+        .relativePosition > div{
+            padding: 50px;
+            background: red;
+            margin-top: 10px
+        }
+
+        .relativePosition > div:first-child{ 
+            position: relative; /*relative는 '여러 요소들과 관계된 현재 위치'를 기준으로 움직임*/ 
+            top: -100px;     /*relative의 자식요소가 100px 위로 올라감/ 내가 현재 있는 기준으로 올라감*/
+        }
+
+        .absolutePosition{
+            width: 100%;
+            background: rgb(224, 67, 238);
+            height: 300px;
+        }
+     
+        .absolutePosition > div{    /*absolute는 '독립적으로 좌표만을 따르는'기준으로 움직임*/
+            position:absolute;     /*HTML문서를 기준으로 가장 오른쪽에 붙게 됨*/
+            right:0px;            /*만약top에 0px를 주면 가장 위로가서 붙게 됨*/
+            bottom: 0px;
+            width:400px;
+            height: 100px;
+            background: blue;  
+        }
+
+        .fixedPosition{ 
+            width: 100%;
+            background: rgb(139, 217, 248);
+            height: 500px;
+
+        }
+
+        .fixedPosition > div{    /*fixed는 HTML문서가 아닌 '브라우저'를 기준으로 '고정'됨 */
+        position:fixed;     
+        top:100px;          
+        right: 0px;
+        width:400px;
+        height: 100px;
+        background: blue;  
+    }
+
+
+    </style>
+    <div class="blankPosition">
+        <div>blank</div>
+    </div>
+
+    <div class="relativePosition">
+        <div>relative</div>
+        <div>relative</div>
+    </div>
+
+    <div class="absolutePosition">
+        <div>absolute</div>
+    </div>
+
+    <div class="fixedPosition">
+        <div>fixed</div>
+    </div>
+    
+
+
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>성별</th>
+                <th>나이</th>
+                <th>키</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>홍길동</td>
+                <td>남</td>
+                <td>12</td>
+                <td>180</td>
+            </tr>
+            <tr>
+                <td>신사임당</td>
+                <td>여</td>
+                <td>30</td>
+                <td>160</td>
+            </tr>
+        </tbody>
+
+    </table> -->
+</body>
+</html>

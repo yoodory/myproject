@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        li{list-style: none;}
+
+        .colorBtn{
+            width: 100px;
+            height:36px;
+            background-color: greenyellow;
+            color:green; /*글자색*/
+            text-align:center ;
+            line-height: 36px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+    
+    </style>
+
+    <form>    
+        
+        <ul>
+            <li><input type="text">  ID </li>
+            <li><input type="text">  비밀번호 </li>
+            <li><input type="submit"> </li>
+            <li>
+                <label><input type="radio" name="fruit" id="orange">오렌지</label>
+                <label><input type="radio" name="fruit" id="apple">사과</label>
+                <label><input type="radio" name="fruit" id="banana">바나나</label>
+            </li>
+
+            <li>
+                <label><input type="checkbox" name="fruit" id="orange">오렌지</label>
+                <label><input type="checkbox" name="fruit" id="apple">사과</label>
+                <label><input type="checkbox" name="fruit" id="banana">바나나</label>
+            </li>
+
+            <!-- <li><input type="button" value="버튼입니다"></li>
+            <li><input type="submit" value="저장하기"></li> -->
+
+            <li><div class="colorBtn">버튼</div></li>
+        </ul>
+    </form>
+</body>
+</html>

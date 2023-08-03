@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go하이킹</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> 
+
+   
+</head>
+
+
+<body>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            list-style: none;  /*리스트 앞에 붙는 점들 없애줌*/
+
+        }
+
+        .logo{
+            display: flex;
+        }
+
+     
+        .side{
+            background:rgb(209, 237, 247);
+            width:150px; 
+            height:450px;
+            float: left;
+            
+        }     
+
+        .footer{
+            background:white;
+            display:flex;            
+            justify-content: center;
+            font-size: 10px;
+            line-height: 30px;
+        }
+        
+        .colorBtn{
+            margin-top: 60px;
+            margin-right:20px;
+            width: 50px;
+            height:40px;
+            background-color: rgb(15, 88, 155);
+            color:white; 
+            display: flex;
+            align-items:center;
+            text-align:center ;
+            justify-content: center;
+            line-height: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .input{
+            font-size: 12px;
+            display: fixed;
+            width: 150px;
+            margin-top: 40px;
+            margin-left: 15px;
+        }
+
+        .left{
+            background:rgb(209, 237, 247);
+            width:150px; 
+            height:450px;
+            float: left;
+        }
+
+    </style>
+    <header>
+        <div class="logo">
+            <a href='index.html'><img src="image/symbol.jpg" style ="display:block; margin-top:20px; margin-left:10px; width:150px; height:90px"; alt="로고 아이콘"></a>           
+                
+            <button type="button" onclick="location.href='intro.html'" target="_blank" class="btn btn-primary"> Go하이킹소개 </button> 
+            <button type="button" onclick="location.href='class.html'" class="btn btn-primary"> 등산교실 </button>
+            <button type="button" onclick="location.href='course.html'" class="btn btn-primary"> 등산코스 </button>
+            <button type="button" onclick="location.href='backpack.html'" class="btn btn-primary"> 등산준비 </button>
+            <button type="button" onclick="location.href='weather.html'" class="btn btn-primary"> 날씨정보 </button>
+            <button type="button" onclick="location.href='board.html'" class="btn btn-primary"> 게시판 </button> 
+            
+        <form class="input">  
+            <ul>
+                <li><input type="id" style="width:80px; height:30px; font-size:15px">  ID </li>
+                <li><input type="password" style="width:80px; height:30px; font-size:15px"> PW </li>                
+               
+            </ul>                
+            </form>
+            <div class="colorBtn">로그인</div>
+        </div>
+    </header>
+        <div class="left">
+                <a href='class.html'><img src="image/class.png"  style ="display:block; margin:0 auto; margin-bottom: 25px; width: 100px; height:80px"; alt="칠판이미지"></a>
+                <a href='course.html'><img src="image/course.png" style ="display:block; margin:0 auto; margin-bottom: 25px; width: 100px; height:80px"; alt="등산코스 이미지"></a>
+                <a href='backpack.html'><img src="image/backpack.png" style ="display:block; margin:0 auto; margin-bottom: 25px; width: 100px; height:80px"; alt="배낭이미지"></a>
+                <a href='board.html'><img src="image/memo.png" style ="display:block; margin:0 auto; margin-bottom: 25px; width: 100px; height:80px"; alt="메모이미지"></a>
+
+    </div>    
+        <div class="main">
+            <div>
+                <img src="image/Center.jpg" style ="display:block;margin-top:65px; margin-left:90px; margin-right:75px; width:700px; height:350px"; alt="이미지">
+            </div>
+
+               
+
+
+        <div class="side">
+                
+                <a href='weather.html'><img src="image/weather1.png"  style ="display:block; margin:0 auto; margin-top:20px; margin-bottom: 20px; width: 100px; height:80px"; alt="이미지"></a>
+                <a href='mWeather.html'><img src="image/mountainWeather.png" style ="display:block; margin:0 auto; margin-bottom: 25px; width: 100px; height:80px"; alt="이미지"></a>
+                <a href='trans.html'><img src="image/trans.png" style ="display:block; margin:0 auto;  margin-bottom: 35px; width: 100px; height:80px"; alt="이미지"></a>
+                <a href='app.html'><img src="image/app.png" style ="display:block; margin:0 auto; width: 100px; height:80px"; alt="이미지"></a>
+        
+        </div></div><div style="clear:right"></div>
+       
+     
+       
+
+    <footer>
+        <div class="footer">
+        <img src="image/symbol.jpg" style ="display:flex; width:55px; height:30px"; alt="로고 아이콘">           
+        Copyright ⓒ2023 Go하이킹 all rights reserved 모든 콘텐츠 는 저작권법의 보호를 받는바, 커뮤니티, 카페, 
+        블로그 등에서 무단 전재·배포 등을 금합니다. </div> 
+        
+              
+    </footer>
+
+
+</body>
+</html>
+

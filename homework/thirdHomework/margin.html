@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        div{
+            background: pink;
+            padding: 20px;
+            margin-left:50px; 
+            margin-top:150px; 
+        }
+        div > span:first-child{   /*div가 품고 있는 자식 중 첫번째 자식만 선택됨*/
+            background: rgb(230, 25, 104);
+            padding-top: 50px;    
+            padding-left: 150px;  
+            padding-bottom: 150px;  
+            padding-right: 50px;  
+        }
+
+        div > span:last-child{   /*div가 품고 있는 자식 중 마지막 자식만 선택됨*/
+            background: rgb(81, 208, 215);
+            padding-top: 50px;    
+            padding-left: 150px;  
+            padding-bottom: 300px;  
+            padding-right: 3px; 
+        }
+        div > span{
+            background: greenyellow;
+            padding:20px;
+            margin: 10px;
+
+        }
+    </style>
+    <div>
+        <span>최유정</span>
+        <span>과제물</span>
+        <span>발등에 불떨어지다</span>
+    </div>
+</body>
+</html>

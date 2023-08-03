@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>초록우산</title>
+</head>
+<body>
+  <h1>초록우산 어린이재단</h1>  
+  <ul>
+    <li> <a href="index.html">홈</a></li>
+    <li> <a href="https://www.childfund.or.kr/" target="_blank">초록우산 웹사이트</a></li>
+    <li> <a href="movie.html">홍보동영상</a></li>
+    <li> <a href="support.html">후원하기</a></li>
+  </ul>
+  <br>
+  <br>
+  <br>
+
+
+<form action="support.jsp" method="post"> 
+<fieldset>        
+<legend> 후원 카드 정보</legend>
+<ol>
+<li>   
+<fieldset style="width: 500px;">
+    <legend>카드 타입</legend>
+            <ol>
+                <li><input type="radio" name="card" value="c1"> VISA</li>
+                <li><input type="radio" name="card" value="c2"> AmEx</li>
+                <li><input type="radio" name="card" value="c3"> Mastercard</li>
+            </ol>  </fieldset>
+        <li>카드 번호 <input type="password" name="pw" placeholder="숫자만 입력하세요"></li>
+        <li> 유효기간<input type="date"></li> 
+        <li>카드 소유자 이름<input type="userName" name="cardOwner" placeholder="카드 상의 이름"></li>
+</fieldset> 
+</ol>
+<br>
+<fieldset>
+    <legend> 남기고 싶은 말 </legend>
+후원해주셔서 감사합니다. 저희에게 하고 싶은 말을 남겨주세요<br>
+ <textarea cols="100" rows="10"></textarea><br><br>
+</fieldset>
+<br>
+<input type="submit" value="후원하기">&nbsp;<input type="reset" value="다시작성">
+<br>
+<br>
+<small>어린이재단(구.한국복지재단) 사업자등록번호 202-82-55238 <br>
+    2023-04-02전화 1588-1940 팩스 02-756-4256 copyright © ChildFund Korea. All Rights Reserved.</small>
+</form>
+</body>
+</html>
